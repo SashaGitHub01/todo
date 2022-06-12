@@ -1,0 +1,74 @@
+.todo {
+   padding: var(--py) var(--px);
+   background-color: var(--color__white);
+   border-bottom: 1px solid rgba(0, 0, 0, 0.151);
+   cursor: pointer;
+}
+
+.todo_item {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+}
+
+.todo:hover {
+   background-color: var(--color_gray_light);
+}
+
+.todo:last-child {
+   border-bottom: 0;
+}
+
+.todo_body {
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   flex: 1 1 auto;
+}
+.check {
+   cursor: pointer;
+   border: 1px solid rgb(65, 65, 65);
+   width: 26px;
+   height: 26px;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-shrink: 0;
+}
+
+.icon {
+   color: rgb(40, 219, 34);
+   font-size: 1.25rem;
+}
+
+.remove {
+   flex-shrink: 0;
+   color: red;
+   font-size: 1.25rem;
+}
+
+.value {
+   font-size: 1.2rem;
+   line-height: 1.4rem;
+}
+
+.todo.disabled {
+   opacity: 0.4;
+   color: rgb(73, 73, 73);
+}
+
+.todo.disabled p {
+   position: relative;
+}
+
+.todo.disabled p:after {
+   content: "";
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   background-color: rgb(94, 94, 94);
+   height: 2px;
+   width: 100%;
+   transform: translate(-50%);
+}

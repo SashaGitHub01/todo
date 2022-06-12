@@ -1,0 +1,32 @@
+.footer {
+   background-color: var(--color_gray_light);
+   padding: var(--py) var(--px);
+}
+
+.footer_row {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.btn_group {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+}
+
+.btn {
+   padding: 0.125rem 0.3rem;
+   border-radius: 5px;
+}
+
+.btn:hover {
+   background-color: rgb(168, 168, 168);
+}
+
+.btn.active {
+   border: 1px solid rgb(138, 34, 34);
+}
+
+.clear {
+   color: rgb(138, 34, 34);
+}
