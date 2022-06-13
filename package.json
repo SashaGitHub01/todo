@@ -2,9 +2,9 @@
    "name": "testik",
    "version": "0.1.0",
    "private": true,
+   "type": "module",
    "main": "./src/index.tsx",
    "dependencies": {
-      "@testing-library/jest-dom": "^5.16.4",
       "@testing-library/react": "^13.3.0",
       "@testing-library/user-event": "^13.5.0",
       "@types/jest": "^27.5.2",
@@ -15,6 +15,7 @@
       "classnames": "^2.3.1",
       "identity-obj-proxy": "^3.0.0",
       "jest": "^28.1.1",
+      "jest-environment-node": "^28.1.1",
       "jest-puppeteer": "^6.1.0",
       "nanoid": "^4.0.0",
       "react": "^18.1.0",
@@ -51,8 +52,12 @@
       ]
    },
    "devDependencies": {
+      "@babel/core": "^7.18.2",
       "@babel/plugin-transform-modules-commonjs": "^7.18.2",
       "@babel/preset-env": "^7.18.2",
-      "@babel/preset-react": "^7.17.12"
+      "@babel/preset-react": "^7.17.12",
+      "@babel/preset-typescript": "^7.17.12",
+      "@testing-library/jest-dom": "^5.16.4",
+      "jest-environment-jsdom": "^28.1.1"
    }
 }

@@ -23,7 +23,7 @@ const TodoForm: React.FC<PropsWithChildren<TodoFormProps>> = ({ createTodo }) =>
       const todo: Todo = {
          value,
          status: 'ACTIVE',
-         id: nanoid(6)
+         id: nanoid(12)
       }
 
       createTodo(todo)
@@ -31,9 +31,10 @@ const TodoForm: React.FC<PropsWithChildren<TodoFormProps>> = ({ createTodo }) =>
    }
 
    return (
-      <form onSubmit={handleSubmit} className={s.form}>
+      <form onSubmit={handleSubmit} className={s.form} data-testid='todo-form'>
          <label className={s.input_cont}>
             <input
+               data-testid='todo-input'
                type={'text'}
                value={value}
                placeholder='Add new todo...'

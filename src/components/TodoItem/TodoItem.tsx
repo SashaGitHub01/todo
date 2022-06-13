@@ -43,7 +43,7 @@ const TodoItem: React.FC<PropsWithChildren<TodoItemProps>> = ({ value, status, i
                   {value}
                </p>
             </div>
-            <button className={s.remove} onClick={handleDelete}>
+            <button className={s.remove} onClick={handleDelete} data-testid='deleteBtn'>
                <MdClose />
             </button>
          </div>

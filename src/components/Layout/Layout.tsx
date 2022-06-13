@@ -9,7 +9,7 @@ const Layout: React.FC<PropsWithChildren<LayoutProps>> = ({ children }) => {
       <div className={s.layout}>
          <main className={s.main}>
             <div>
-               <h1 className={s.title}>
+               <h1 className={s.title} data-testid='head'>
                   todos
                </h1>
             </div>
